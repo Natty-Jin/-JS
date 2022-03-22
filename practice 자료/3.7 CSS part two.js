@@ -7,11 +7,19 @@ className을 조건문(if)으로 active가 아닌, 값이 없는 것으로 변�
 변경되게끔 코드를 탈바꿈 함. */
 
 function handleTitleClick() {
-    const clickedClass = "clicked sexy-font";
-    if (h1.className === clickedClass) {
-        h1.className = "";
+    //     const clickedClass = "clicked sexy-font";
+    //     if (h1.className === clickedClass) {
+    //         h1.className = "";
+    //     } else {
+    //         h1.className = clickedClass;
+    //     }
+    // }
+
+    const clickedClass = "clicked";
+    if (h1.classList.contains(clickedClass)) {
+        h1.classList.remove(clickedClass)
     } else {
-        h1.className = clickedClass;
+        h1.classList.add(clickedClass);
     }
 }
 

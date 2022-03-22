@@ -5,27 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Hello APP</title>
+    <title>Momentum App</title>
+    <link rel="style.css" href="style.css" />
 </head>
+<!-- input을 form에 넣었을 때, JS의 도움을 받지 않아도 텍스트 창은
+15개 글자까지 인식을 하게 만들 수 있다. 그리고 또한 form은 자동 submit을
+하기 때문에 인터넷  창이 새로고침이 된다. 이러한 경우가 있으니 참고 하길. -->
 
 <body>
-    <div class="hello">
-        <h1 class="sexy-font">Click me!</h1>
-    </div>
-    <Script src="3-5 More Events.js"></Script>
-    <!--     <h2>맛집</h2>
-    <ol>
-        <li>스테이크</li>
-        <li>삼겹살</li>
-        <li>쌈밥</li>
-    </ol>
-    <h2>명소</h2>
-    <ul>
-        <li>홍대 버스킹거리</li>
-        <li>상수역</li>
-        <li>샤로수길</li>
-    </ul> -->
+    <form id="login-form">
+        <input required maxlength="15" type="text" placeholder="what is your name?" />
+        <input type="submit" value="log in"></input>
+    </form>
+    <script src="app.js"></script>
 </body>
 
 </html>
